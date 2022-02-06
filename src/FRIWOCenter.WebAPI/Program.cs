@@ -26,8 +26,13 @@ builder.Services.AddCors(options =>
                 builder.WithOrigins(
                             "https://localhost:7214",
                             "https://localhost:7004",
+                            "https://localhost:5000",
+                            "https://localhost:5001",
+                            "wss://localhost:50238",
+                            "wss://localhost:50401",
                             "https://localhost:44322",
-                            "https://www.blazingchat.com")
+                            "https://localhost:44323",
+                            "https://www.blazingchat.com/")
                             .AllowAnyHeader()
                             .AllowAnyMethod();
             });
